@@ -241,8 +241,8 @@
       <uses-permission android:name="android.permission.INTERNET"/>
       <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
       <!-- The following two permissions are not required to use Google Maps Android API v2, but are recommended. -->
-      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<!--      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>-->
+<!--      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
       <!-- OpenGL ES version 2 -->
       <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
       <!-- GPS -->
@@ -288,8 +288,8 @@
   <!-- ios -->
   <platform name="ios">
 
-    <preference name="LOCATION_WHEN_IN_USE_DESCRIPTION" default="This app wants to get your location while this app runs only."/>
-    <preference name="LOCATION_ALWAYS_USAGE_DESCRIPTION" default="This app wants to get your location always, even this app runs in background."/>
+<!--    <preference name="LOCATION_WHEN_IN_USE_DESCRIPTION" default="This app wants to get your location while this app runs only."/>-->
+<!--    <preference name="LOCATION_ALWAYS_USAGE_DESCRIPTION" default="This app wants to get your location always, even this app runs in background."/>-->
 
     <js-module name="googlemaps-cdv-plugin" src="www/plugin-loader-for-android_ios.js">
       <clobbers target="plugin.google.maps"/>
@@ -431,13 +431,13 @@
     <!-- localized messages for Vietnamese -->
     <resource-file src="src/ios/strings/pgm_Localizable_vi.json" target="pgm_Localizable_vi.json"/>
 
-    <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-      <string>$LOCATION_WHEN_IN_USE_DESCRIPTION</string>
-    </config-file>
+<!--    <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">-->
+<!--      <string>$LOCATION_WHEN_IN_USE_DESCRIPTION</string>-->
+<!--    </config-file>-->
 
-    <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-      <string>$LOCATION_ALWAYS_USAGE_DESCRIPTION</string>
-    </config-file>
+<!--    <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">-->
+<!--      <string>$LOCATION_ALWAYS_USAGE_DESCRIPTION</string>-->
+<!--    </config-file>-->
 
     <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
       <array>

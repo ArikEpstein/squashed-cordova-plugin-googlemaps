@@ -57,7 +57,8 @@ var LocationService = function(exec) {
         reject.bind(self), 'PluginLocationService', 'getMyLocation', [params], {sync: true});
       };
 
-      params.enableHighAccuracy = params.enableHighAccuracy === true;
+      params.enableHighAccuracy = false;
+      // params.enableHighAccuracy = params.enableHighAccuracy === true;
       var errorHandler = function(result) {
         if (typeof errorCallback === 'function') {
           errorCallback.call(self, result);

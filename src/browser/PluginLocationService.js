@@ -43,7 +43,7 @@ module.exports = {
           'error_message': error.message
         });
       }, {
-        'enableHighAccuracy': true
+        'enableHighAccuracy': false
       });
     } else {
       onError({
